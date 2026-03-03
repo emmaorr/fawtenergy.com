@@ -1,59 +1,271 @@
-<h1>Delivering renewable energy projects from concept to energisation.</h1>
-<p class="lead">
-FAWT Energy Limited is a renewable energy developer active across Ireland and Northern Ireland. We originate and deliver projects across onshore wind, solar and anaerobic digestion, alongside biochar initiatives supporting the decarbonisation of heat and power.
-</p><p class="lead">
-Our work spans the full development lifecycle: identifying sites, engaging with landowners and stakeholders, managing the planning and consenting process, undertaking environmental assessments, securing grid access, and overseeing delivery through construction and commissioning.
-</p>Renewable energy development | Ireland & Northern Ireland
-<section class="content">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FAWT Energy Limited</title>
+<meta name="description" content="FAWT Energy Limited is a renewable energy developer active across Ireland and Northern Ireland." />
 
-  <section>
-    <h2>What we do</h2>
-    <h3>End-to-end development</h3>
-    <p>
-      We manage renewable energy development through each stage, including:
+<style>
+:root{
+  --bg:#f6faf8;
+  --card:#ffffff;
+  --ink:#0f172a;
+  --muted:#475569;
+  --line:#e2e8f0;
+  --accent:#1f7a5a;
+  --accent2:#2a6df6;
+  --shadow:0 14px 40px rgba(2,6,23,0.10);
+  --radius:18px;
+  --radius-sm:14px;
+  --max:1100px;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(900px 600px at 10% 0%, rgba(31,122,90,0.12), transparent 60%),
+    radial-gradient(900px 600px at 90% 10%, rgba(42,109,246,0.10), transparent 60%),
+    var(--bg);
+  line-height:1.6;
+}
+
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px 20px 70px;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+}
+
+.brand .name{
+  margin:0;
+  font-weight:700;
+  font-size:16px;
+}
+
+.brand .tagline{
+  margin:0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+nav a{
+  margin-left:14px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+@media(max-width:900px){
+  nav{display:none;}
+}
+
+/* HERO */
+.hero{
+  border-radius:var(--radius);
+  overflow:hidden;
+  position:relative;
+  box-shadow:var(--shadow);
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(11,18,32,0.35), rgba(11,18,32,0.80)),
+    url('hero.png');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-inner{
+  position:relative;
+  padding:60px 30px 40px;
+  color:#ffffff;
+}
+
+.hero h1{
+  margin:0 0 14px;
+  font-size:42px;
+  line-height:1.15;
+}
+
+.lead{
+  max-width:750px;
+  margin:0 0 12px;
+  color:rgba(255,255,255,0.88);
+}
+
+.chips{
+  margin-top:18px;
+}
+
+.chip{
+  display:inline-block;
+  margin:6px 8px 0 0;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  background:rgba(255,255,255,0.15);
+}
+
+/* CONTENT */
+main{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+@media(max-width:900px){
+  main{grid-template-columns:1fr;}
+}
+
+.panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+}
+
+.panel h2{
+  margin:0 0 8px;
+  font-size:14px;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+.panel h3{
+  margin:0 0 12px;
+  font-size:18px;
+}
+
+.panel p{
+  margin:0 0 14px;
+  color:var(--muted);
+}
+
+ul{
+  margin:0 0 0 18px;
+  color:var(--muted);
+}
+
+footer{
+  margin-top:40px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-size:12.5px;
+  color:#64748b;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <p class="name">FAWT Energy Limited</p>
+    <p class="tagline">Renewable energy development | Ireland &amp; Northern Ireland</p>
+  </div>
+  <nav>
+    <a href="#what">What we do</a>
+    <a href="#repowering">Repowering</a>
+    <a href="#focus">Focus</a>
+    <a href="#pipeline">Pipeline</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Delivering renewable energy projects from concept to energisation.</h1>
+
+    <p class="lead">
+      FAWT Energy Limited is a renewable energy developer active across Ireland and Northern Ireland. We originate and deliver projects across onshore wind, solar and anaerobic digestion, alongside biochar initiatives supporting the decarbonisation of heat and power.
     </p>
-    <ul>
-      <li>Site identification and feasibility</li>
-      <li>Landowner engagement and option and lease progression</li>
-      <li>Consenting strategy and planning applications, including environmental assessments where required</li>
-      <li>Grid connection strategy and application management</li>
-      <li>Procurement support, construction oversight and commissioning through to energisation</li>
-    </ul>
-  </section>
 
-  <section>
-    <h2>Repowering and optimisation</h2>
-    <h3>Repowering experience</h3>
-    <p>
-      FAWT has repowered multiple wind turbine assets, extending operational life while improving performance and efficiency.
-      Repowering projects are progressed through appropriate planning and grid processes, ensuring compliance and long-term asset optimisation.
+    <p class="lead">
+      Our work spans the full development lifecycle: identifying sites, engaging with landowners and stakeholders, managing the planning and consenting process, undertaking environmental assessments, securing grid access, and overseeing delivery through construction and commissioning.
     </p>
-  </section>
 
-  <section>
-    <h2>Technology focus</h2>
-    <ul>
-      <li>Onshore wind (including repowering)</li>
-      <li>Solar PV</li>
-      <li>Anaerobic digestion</li>
-      <li>Biochar</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Pipeline</h2>
-    <h3>Active development pipeline</h3>
-    <p>
-      A number of large-scale projects are scheduled for progression during 2026,
-      reflecting a substantial and active development pipeline across Ireland and Northern Ireland.
-    </p>
-  </section>
-
-  <section>
-    <h2>Enquiries</h2>
-    <p>
-      For general enquiries: <a href="mailto:tracy@fawtenergy.com">tracy@fawtenergy.com</a>
-    </p>
-  </section>
-
+    <div class="chips">
+      <span class="chip">Onshore wind</span>
+      <span class="chip">Solar PV</span>
+      <span class="chip">Anaerobic digestion</span>
+      <span class="chip">Biochar</span>
+    </div>
+  </div>
 </section>
+
+<main>
+
+<section class="panel" id="what">
+  <h2>What we do</h2>
+  <h3>End-to-end development</h3>
+  <p>We manage renewable energy development through each stage, including:</p>
+  <ul>
+    <li>Site identification and feasibility</li>
+    <li>Landowner engagement and option and lease progression</li>
+    <li>Consenting strategy and planning applications, including environmental assessments where required</li>
+    <li>Grid connection strategy and application management</li>
+    <li>Procurement support, construction oversight and commissioning through to energisation</li>
+  </ul>
+</section>
+
+<section class="panel" id="repowering">
+  <h2>Repowering and optimisation</h2>
+  <h3>Repowering experience</h3>
+  <p>
+    FAWT has repowered multiple wind turbine assets, extending operational life while improving performance and efficiency. Repowering projects are progressed through appropriate planning and grid processes, ensuring compliance and long-term asset optimisation.
+  </p>
+</section>
+
+<section class="panel" id="focus">
+  <h2>Technology focus</h2>
+  <ul>
+    <li>Onshore wind (including repowering)</li>
+    <li>Solar PV</li>
+    <li>Anaerobic digestion</li>
+    <li>Biochar</li>
+  </ul>
+</section>
+
+<section class="panel" id="pipeline">
+  <h2>Pipeline</h2>
+  <h3>Active development pipeline</h3>
+  <p>
+    A number of large-scale projects are scheduled for progression during 2026, reflecting a substantial and active development pipeline across Ireland and Northern Ireland.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <div>FAWT Energy Limited | Company No. 133239C | Registered Office: Fort Anne, Douglas, IM1 5PD, Isle of Man</div>
+  <div>© 2026 FAWT Energy Limited. All rights reserved.</div>
+</footer>
+
+</div>
+</body>
+</html>
