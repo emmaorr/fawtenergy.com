@@ -8,16 +8,14 @@
 
 <style>
 :root{
-  --bg:#f6faf8;
+  --bg:#f5f8f7;
   --card:#ffffff;
   --ink:#0f172a;
   --muted:#475569;
   --line:#e2e8f0;
   --accent:#1f7a5a;
-  --accent2:#2a6df6;
-  --shadow:0 14px 40px rgba(2,6,23,0.10);
+  --shadow:0 10px 30px rgba(2,6,23,0.08);
   --radius:18px;
-  --radius-sm:14px;
   --max:1100px;
 }
 
@@ -26,11 +24,8 @@
 body{
   margin:0;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);
   color:var(--ink);
-  background:
-    radial-gradient(900px 600px at 10% 0%, rgba(31,122,90,0.12), transparent 60%),
-    radial-gradient(900px 600px at 90% 10%, rgba(42,109,246,0.10), transparent 60%),
-    var(--bg);
   line-height:1.6;
 }
 
@@ -40,14 +35,14 @@ a:hover{text-decoration:underline;}
 .wrap{
   max-width:var(--max);
   margin:0 auto;
-  padding:28px 20px 70px;
+  padding:30px 20px 70px;
 }
 
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding-bottom:18px;
+  padding-bottom:20px;
 }
 
 .brand{
@@ -68,7 +63,7 @@ header{
 }
 
 nav a{
-  margin-left:14px;
+  margin-left:16px;
   font-size:13px;
   color:var(--muted);
 }
@@ -77,100 +72,64 @@ nav a{
   nav{display:none;}
 }
 
-/* HERO */
+/* HERO IMAGE ONLY */
 .hero{
   border-radius:var(--radius);
   overflow:hidden;
-  position:relative;
   box-shadow:var(--shadow);
+  margin-bottom:28px;
 }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:
-    linear-gradient(rgba(11,18,32,0.15), rgba(11,18,32,0.65)),
-    url('hero.png');
-  background-size:cover;
-  background-position:top center;
+.hero img{
+  display:block;
+  width:100%;
+  height:auto;
 }
 
-.hero-inner{
-  position:relative;
-  padding:60px 30px 40px;
-  color:#ffffff;
-}
-
-.hero h1{
-  margin:0 0 14px;
-  font-size:42px;
-  line-height:1.15;
-}
-
-.lead{
-  max-width:750px;
-  margin:0 0 12px;
-  color:rgba(255,255,255,0.88);
-}
-
-.chips{
-  margin-top:18px;
-}
-
-.chip{
-  display:inline-block;
-  margin:6px 8px 0 0;
-  padding:8px 12px;
-  border-radius:999px;
-  font-size:12px;
-  background:rgba(255,255,255,0.15);
-}
-
-/* CONTENT */
-main{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-
-@media(max-width:900px){
-  main{grid-template-columns:1fr;}
-}
-
+/* CONTENT PANELS */
 .panel{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:var(--radius);
-  padding:22px;
+  padding:26px;
+  margin-bottom:20px;
 }
 
 .panel h2{
-  margin:0 0 8px;
+  margin:0 0 10px;
   font-size:14px;
   text-transform:uppercase;
   color:var(--accent);
 }
 
 .panel h3{
-  margin:0 0 12px;
-  font-size:18px;
+  margin:0 0 14px;
+  font-size:20px;
 }
 
 .panel p{
-  margin:0 0 14px;
+  margin:0 0 16px;
   color:var(--muted);
 }
 
-ul{
-  margin:0 0 0 18px;
+.panel ul{
+  margin:0 0 0 20px;
   color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;}
 }
 
 footer{
   margin-top:40px;
-  padding-top:16px;
+  padding-top:18px;
   border-top:1px solid var(--line);
   font-size:12.5px;
   color:#64748b;
@@ -192,33 +151,29 @@ footer{
   <nav>
     <a href="#what">What we do</a>
     <a href="#repowering">Repowering</a>
-    <a href="#focus">Focus</a>
+    <a href="#focus">Technology</a>
     <a href="#pipeline">Pipeline</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <h1>Delivering renewable energy projects from concept to energisation.</h1>
-
-    <p class="lead">
-      FAWT Energy Limited is a renewable energy developer active across Ireland and Northern Ireland. We originate and deliver projects across onshore wind, solar and anaerobic digestion, alongside biochar initiatives supporting the decarbonisation of heat and power.
-    </p>
-
-    <p class="lead">
-      Our work spans the full development lifecycle: identifying sites, engaging with landowners and stakeholders, managing the planning and consenting process, undertaking environmental assessments, securing grid access, and overseeing delivery through construction and commissioning.
-    </p>
-
-    <div class="chips">
-      <span class="chip">Onshore wind</span>
-      <span class="chip">Solar PV</span>
-      <span class="chip">Anaerobic digestion</span>
-      <span class="chip">Biochar</span>
-    </div>
-  </div>
+  <img src="hero.png" alt="Renewable energy landscape featuring wind turbines and solar panels" />
 </section>
 
-<main>
+<section class="panel">
+  <h2>Overview</h2>
+  <h3>Delivering renewable energy projects from concept to energisation.</h3>
+
+  <p>
+    FAWT Energy Limited is a renewable energy developer active across Ireland and Northern Ireland. We originate and deliver projects across onshore wind, solar and anaerobic digestion, alongside biochar initiatives supporting the decarbonisation of heat and power.
+  </p>
+
+  <p>
+    Our work spans the full development lifecycle: identifying sites, engaging with landowners and stakeholders, managing the planning and consenting process, undertaking environmental assessments, securing grid access, and overseeing delivery through construction and commissioning.
+  </p>
+</section>
+
+<div class="grid">
 
 <section class="panel" id="what">
   <h2>What we do</h2>
@@ -259,7 +214,7 @@ footer{
   </p>
 </section>
 
-</main>
+</div>
 
 <footer>
   <div>FAWT Energy Limited | Company No. 133239C | Registered Office: Fort Anne, Douglas, IM1 5PD, Isle of Man</div>
